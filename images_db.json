@@ -1,0 +1,22 @@
+{
+  "basketball shooting": "image_output/basketball_shooting_1_out.jpg",
+  "shooting a basketball": "image_output/basketball_shooting_1_out.jpg",
+  "basketball shooting pose": "image_output/basketball_shooting_1_out.jpg",
+  "shooting": "image_output/basketball_shooting_1_out.jpg",
+  "basketball dribbling": "image_output/basketball_dribbling_out.jpg",
+  "dribbling": "image_output/basketball_dribbling_out.jpg",
+  "bear crawl": "image_output/HIIT_Bear_Crawls_out.jpg",
+  "dead bug": "image_output/HIIT_Dead_Bug_out.jpg",
+  "front kick lunge": "image_output/HIIT_Front_Kick_Lung_out.jpg",
+  "hollow hold": "image_output/HIIT_Hollow_Hold_out.jpg",
+  "lateral lunge": "image_output/HIIT_Lateral_Lunge_out.jpg",
+  "mountain climbers": "image_output/HIIT_Mountain_Climbers_out.jpg",
+  "reverse crunch": "image_output/HIIT_Reverse_Crunch_out.jpg",
+  "scissor kicks": "image_output/HIIT_Scissor_Kicks_out.jpg",
+  "swimming stroke 1": "image_output/swimming_1_out.jpg",
+  "swimming freestyle": "image_output/swimming_3_out.jpg",
+  "freestyle": "image_output/swimming_3_out.jpg",
+  "swimming stroke 4": "image_output/swimming_4_out.jpg",
+  "swimming backstroke": "image_output/swimming_7_out.jpg",
+  "backstroke": "image_output/swimming_7_out.jpg"
+}

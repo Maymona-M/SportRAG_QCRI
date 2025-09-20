@@ -1,0 +1,12 @@
+torch
+transformers
+faiss-cpu # or faiss-gpu
+numpy
+python-dotenv
+google-generativeai
+flask
+flask-cors
+langchain
+langchain-community
+langchain-huggingface
+sentence-transformers
