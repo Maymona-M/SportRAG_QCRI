@@ -1,0 +1,35 @@
+[
+    {
+        "cultural_id": "CULT001",
+        "region": "Levant",
+        "cultural_element_name": "Hospitality (Dhiafa)",
+        "description": "A deeply ingrained social norm emphasizing generosity and welcoming guests, even strangers. Failure to offer hospitality can be seen as a grave offense.",
+        "examples": [
+            "Offering tea/coffee to visitors immediately.",
+            "Insisting guests stay for a meal.",
+            "Providing shelter to travelers."
+        ]
+    },
+    {
+        "cultural_id": "CULT002",
+        "region": "Levant",
+        "cultural_element_name": "Family Honor (Sharaf)",
+        "description": "The collective reputation and dignity of a family, influencing individual behavior and decisions. Protecting family honor is paramount.",
+        "examples": [
+            "Maintaining good behavior in public.",
+            "Respecting elders and family traditions.",
+            "Avoiding actions that could bring shame upon the family."
+        ]
+    },
+    {
+        "cultural_id": "CULT003",
+        "region": "Levant",
+        "cultural_element_name": "Respect for Elders",
+        "description": "A fundamental social norm where older individuals are accorded high respect, their advice is valued, and their presence is honored.",
+        "examples": [
+            "Standing up when an elder enters a room.",
+            "Kissing the hand of an elder.",
+            "Addressing elders with respectful titles."
+        ]
+    }
+]
