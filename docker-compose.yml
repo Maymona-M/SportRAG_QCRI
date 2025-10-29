@@ -1,0 +1,48 @@
+services:
+  sonar:
+    image: sonarqube:lts
+    depends_on:
+      - api
+      - ui
+      - proxy
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    entrypoint: ["/bin/bash", "-lc", "chmod +x /api/dev.sh && exec /api/dev.sh"]
+    volumes:
+      - ./api:/api:Z
+      - ./secret:/secret:Z
+      - ~/.cache/huggingface:/root/.cache/huggingface:Z
+      - ./embeddings:/api/embeddings:Z
+      - ./images_db.json:/api/images_db.json:Z
+      - ./static:/api/static:Z
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LITELLM_LOG=WARNING
+      - CONFIG_PATH=run_configs/default.json
+      - AZURE_API_KEY=724c6a069d3c43da880d5ad4cf17bfdd
+      - AZURE_API_BASE=https://qllms-fanar-oai-01.openai.azure.com
+      - AZURE_API_VERSION=2024-05-01-preview
+    ports:
+      - "8002:8000"   
+    env_file:
+      - .env
+
+  ui:
+    # Production static UI served by nginx in the image.
+    build: ./frontend
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "4002:80"
+    # Do not mount source in production image (assets are baked into image)
+
+  proxy:
+    build: ./proxy
+    ports:
+      - "7020:80"     
+    depends_on:
+      - ui
+      - api

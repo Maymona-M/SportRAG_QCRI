@@ -10,3 +10,6 @@ langchain
 langchain-community
 langchain-huggingface
 sentence-transformers
+langdetect
+opencv-python
+mediapipe

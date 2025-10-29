@@ -9,7 +9,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from scripts.conversation_manager import ConversationManager
 from langdetect import detect
 from typing import List
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 
 SYSTEM_PROMPT = (

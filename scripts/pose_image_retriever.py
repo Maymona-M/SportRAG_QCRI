@@ -4,8 +4,12 @@ from pathlib import Path
 class PoseImageRetriever:
     def __init__(self, db_path='images_db.json', base_dir=''):
         self.base_dir = Path(base_dir) if base_dir else Path()
-        with open(db_path, 'r', encoding='utf-8') as f:
-            self.images_db = json.load(f)
+        try:
+            with open(db_path, 'r', encoding='utf-8') as f:
+                self.images_db = json.load(f)
+        except FileNotFoundError:
+            print(f"Warning: {db_path} not found. Image retrieval will be disabled.")
+            self.images_db = {}
 
     def retrieve_image(self, user_query):
         query = user_query.lower()
